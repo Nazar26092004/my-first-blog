@@ -1,0 +1,20 @@
+h1 {
+    color: blue;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилі для основного тексту */
+p {
+    color: green;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Стилі для підвалу */
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

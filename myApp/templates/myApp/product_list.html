@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volleyball Gear Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Volleyball Gear Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            {% for product in products %}
+            <div class="product">
+                <h3>{{ product.title }}</h3>
+                <p>{{ product.description }}</p>
+                <p>Price: ${{ product.price }}</p>
+                <img src="{{ product.image.url }}" alt="{{ product.title }}">
+                <button>Add to Cart</button>
+            </div>
+            {% endfor %}
+        </section>
+        
+        <!-- Інші блоки HTML для кошика, підвалу тощо -->
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Volleyball Gear Shop</p>
+    </footer>
+</body>
+</html>
